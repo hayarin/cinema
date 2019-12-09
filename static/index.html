@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>&#65279;</title>
+    <link rel="stylesheet" type="text/css" href="css/uploaderstyle.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+  <body>
+
+
+<section class="main" >
+  
+<p class="sa">mp4 and webm up to 100M</p>
+
+<div class="selector">
+  <form method="post"  enctype="multipart/form-data">
+      <input type="file" accept=".webm, .mp4" class="filestoupload" title=" " />      
+  </form>  
+</div>
+<div class="selectorShadow"></div>
+<div class="selectorLabel">SELECT</div>
+
+<div class="progress">
+  <div class="progBar"></div>
+</div>
+
+
+<button type='button' class="bCopy" onclick="copy()">COPY LINK</button>
+
+<p>
+  <input class="linkStorage" placeholder="link address"></input>
+</p>
+
+</section>
+
+<div class="overlay"  onclick="rvlink()"></div>
+<video loop class="indexvid" src="" type="video/webm"></video>
+<script type="text/javascript" src="js/rnd.js"></script>
+<script type="text/javascript" src="js/upl.js"></script>
+</body>
+</html>

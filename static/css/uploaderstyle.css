@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'AVANTN';
+  src: url('../AVANTN.ttf') format('truetype');
+}
+
+body {
+  background-color: #1c1c1c;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.indexvid {
+  margin: 0;
+  position: fixed;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.main {
+  position: fixed;
+  width: 50%;
+  height: 40%;
+  top: 50%;
+  left: 25%;
+  z-index: 2;
+}
+
+.sa {
+  position: fixed;
+  text-align: center;
+  font-family: 'AVANTN';
+  color: #fff;
+  font-size: 2.4vh;
+  font-weight: 150;
+  letter-spacing: 0.3em;
+  text-shadow: 0.05em 0.03em #f7b6ba;
+  width: 40%;
+  left: 30%;
+  top: 60%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.selector {
+  position: fixed;
+  width: 50%;
+  height: 40%;
+  opacity: 100%;
+  top: 50vh;
+  left: 25vw;
+  border: 0.2rem dashed white;
+  border-radius: 20px;
+}
+
+.selectorShadow {
+  position: fixed;
+  width: 50%;
+  height: 40%;
+  opacity: 100%;
+  top: 50.2vh;
+  left: 25.1vw;
+  border: 0.2rem dashed #f7b6ba;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.progress {
+  position: fixed;
+  width: 24.5%;
+  height: 0.7em;
+  opacity: 100%;
+  /* padding: 0.1em; */
+  border: 1px solid azure;
+  top: 69vh;
+  left: 37.5vw;
+  border-radius: 16px;
+  text-align: center;
+  z-index: -1;
+  overflow: hidden;
+  visibility: hidden;
+}
+.progBar {
+  width: 0%;
+  height: 1em;
+  opacity: 100%;
+  background-color: azure;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.selector input[type='file'] {
+  position: fixed;
+  pointer-events: all;
+  width: 50%;
+  height: 40%;
+  opacity: 0%;
+  top: 50%;
+  left: 25%;
+}
+
+.bCopy {
+  position: fixed;
+  font-family: 'AVANTN';
+  letter-spacing: 4px;
+  border: 3px solid white;
+  color: white;
+  border-radius: 8px;
+  font-size: 2.5vh;
+  text-align: center;
+  background-color: Transparent;
+  visibility: hidden;
+  text-shadow: 1px 1px #f7b6ba;
+  box-shadow: 2px 3px #f7b6ba;
+  top: 70vh;
+  left: 40vw;
+  width: 20vw;
+  height: 7vh;
+}
+
+.linkStorage {
+  position: absolute;
+  left: -1000%;
+  pointer-events: none;
+  z-index: -5;
+}
+
+.drag {
+  border: 3px dashed crimson;
+}
+
+.selectorLabel {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .selector {
+    position: fixed;
+    font-family: 'AVANTN';
+    letter-spacing: 4px;
+    border: 3px solid white;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: Transparent;
+    text-shadow: 1px 1px #f7b6ba;
+    box-shadow: 2px 3px #f7b6ba;
+    top: 50vh;
+    left: 35vw;
+    width: 28vw;
+    height: 10vh;
+  }
+  .selectorLabel {
+    position: fixed;
+    font-family: 'AVANTN';
+    letter-spacing: 4px;
+    color: white;
+    font-size: 2.5vh;
+    text-align: center;
+    background-color: Transparent;
+    text-shadow: 1px 1px #f7b6ba;
+    top: 54vh;
+    left: 34.5vw;
+    width: 31vw;
+    height: 7vh;
+    pointer-events: none;
+    opacity: 1;
+  }
+
+  .selectorShadow {
+    opacity: 0%;
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  .selector input[type='file'] {
+    position: fixed;
+    pointer-events: all;
+    top: 50vh;
+    left: 35vw;
+    width: 30vw;
+    height: 7vh;
+    opacity: 0;
+  }
+
+  .progress {
+    position: fixed;
+    width: 24.5%;
+    height: 0.7em;
+    opacity: 100%;
+    border: 1px solid azure;
+    top: 75vh;
+    left: 37.5vw;
+    border-radius: 16px;
+    text-align: center;
+    z-index: -1;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .bCopy {
+    top: 50vh;
+    left: 36vw;
+    width: 28vw;
+    height: 10vh;
+  }
+}
