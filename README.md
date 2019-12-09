@@ -1,1 +1,1 @@
-Crudest file uploader via node possible. 
+Хостинг со случайным воспроизведением размещенных на нем видеофайлов. 
